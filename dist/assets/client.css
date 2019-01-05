@@ -1,0 +1,43 @@
+#navbar {
+  border-radius: 60px;
+  background-color: transparent;
+  border: 2px black solid;
+}
+
+body {
+    background-image: url('https://i.imgur.com/Nbi7bYI.jpg')
+}
+
+#title {
+    color: black;
+    font-size: 15px;
+    border-radius: 60px;
+    background-color: transparent;
+    border: 2px black solid;
+}
+#form {
+    color:  black;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+#textarea {
+    color:  black;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+#form-title {
+    color:  black;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    margin-left: 15px;
+}
+#form-description {
+    color:  black;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    margin-left: 6vw;
+}

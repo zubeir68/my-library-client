@@ -1,0 +1,25 @@
+<br>
+{{#link-to "create-book" id="button"}}
+   <div id="title" class="ui animated fade circular button" style="font-size: 13px; margin-left: 2vw">
+     <div class="visible content">
+       Add Book
+     </div>
+     <div class="hidden content">
+       <i class="plus icon"></i>
+     </div>
+   </div>
+{{/link-to}}
+<div class="ui hidden divider"></div>
+{{#each model as |book|}}
+  {{#link-to "book" book.id}}
+    <div id="title" class="ui animated fade circular button" style="margin-left:2vw">
+      <div class="visible content">
+        {{book.title}}
+      </div>
+      <div class="hidden content">
+        <i class="info circle icon"></i>More info
+      </div>
+    </div>
+    <br>
+  {{/link-to}}
+{{/each}}

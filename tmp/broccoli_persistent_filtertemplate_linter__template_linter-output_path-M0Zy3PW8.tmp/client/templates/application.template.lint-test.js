@@ -1,0 +1,4 @@
+QUnit.test('client/templates/application.hbs', function(assert) {
+  assert.expect(1);
+  assert.ok(false, 'client/templates/application.hbs should pass TemplateLint.\n\nclient/templates/application.hbs\n  3:3  error  Incorrect indentation for `<i>` beginning at L3:C3. Expected `<i>` to be at an indentation of 4 but was found at 3.  block-indentation\n  4:3  error  Incorrect indentation for `<div>` beginning at L4:C3. Expected `<div>` to be at an indentation of 4 but was found at 3.  block-indentation\n  4:24  error  Incorrect indentation for `\n    My Library\n    ` beginning at L4:C24. Expected `\n    My Library\n    ` to be at an indentation of 5 but was found at 4.  block-indentation\n  6:4  error  Incorrect indentation for `<div>` beginning at L6:C4. Expected `<div>` to be at an indentation of 5 but was found at 4.  block-indentation\n');
+});

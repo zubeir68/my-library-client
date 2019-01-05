@@ -1,0 +1,1 @@
+/home/zubeir/WORKSPACE/my_library/client/node_modules/ember-load-initializers/vendor/ember-load-initializers/legacy-shims.js

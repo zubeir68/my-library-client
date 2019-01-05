@@ -1,0 +1,126 @@
+{{#if isEditing}}
+<div class="ui large header" style="margin-left: 1em">Edit</div>
+<div class="ui hidden divider"></div>
+
+<div class="ui form" style="margin-left: 3vw">
+  <div class="inline field">
+    <label>Title</label>
+    {{input
+    value=form.title
+    name="title"
+    autocomplete='off'
+    id="form-title"}}
+  </div>
+</div>
+
+<br>
+<div class="ui hidden divider"></div>
+
+<div class="ui form" style="margin-left: 3vw">
+  <div class="inline field">
+    <label>Author</label>
+    {{input
+    value=form.author
+    name="author"
+    autocomplete='off'
+    id="form"
+    }}
+  </div>
+</div>
+
+<br>
+<div class="ui hidden divider"></div>
+
+<h2 class="ui header" style="margin-left: 3vw; font-size: 15px;">Description</h2>
+{{textarea value=form.description id="form-description" rows="5"}}
+<br>
+<div class="ui hidden divider"></div>
+
+<div {{action "update" model}} id="title" class="ui animated fade circular button" style="margin-left: 2em">
+  <div class="visible content">
+    Update
+  </div>
+  <div class="hidden content">
+    <i class="redo icon"></i>
+  </div>
+</div>
+
+<div {{action (mut isEditing) false}} id="title" class="ui animated fade circular button">
+  <div class="visible content">
+    Cancel
+  </div>
+  <div class="hidden content">
+    <i class="level up alternate icon"></i>
+  </div>
+</div>
+
+{{else}}
+
+<div id="title" class="ui segment">
+  <div class="ui hidden divider"></div>
+  <h2 class="ui header">
+    {{model.title}}
+    <div class="sub header">{{model.author}}</div>
+  </h2>
+  <br>
+  <p>
+    {{model.description}}
+  </p>
+  <div class="ui hidden divider"></div>
+</div>
+
+{{#if confirmingDelete}}
+<div class="ui red large header">
+  Are you sure you want to delete this book?
+</div>
+
+<div {{action "delete" model}} id="title" class="ui animated fade circular button" style="margin-left: 2em">
+  <div class="visible content">
+    Delete
+  </div>
+  <div class="hidden content">
+    <i class="trash icon"></i>
+  </div>
+</div>
+<div {{action  (mut confirmingDelete) false}} id="title" class="ui animated fade circular button" style="margin-left: 2em">
+  <div class="visible content">
+    Cancel
+  </div>
+  <div class="hidden content">
+    <i class="level up alternate icon"></i>
+  </div>
+</div>
+{{else}}
+
+<div {{action (mut confirmingDelete) true}} id="title" class="ui animated fade circular button" style="margin-left: 2em">
+  <div class="visible content">
+    Delete
+  </div>
+  <div class="hidden content">
+    <i class="trash icon"></i>
+  </div>
+</div>
+
+<div {{action (mut isEditing) true}} id="title" class="ui animated fade circular button">
+  <div class="visible content">
+    Edit
+  </div>
+  <div class="hidden content">
+    <i class="edit icon"></i>
+  </div>
+</div>
+
+{{#link-to "books"}}
+<div id="title" class="ui animated fade circular button">
+  <div class="visible content">
+    Back
+  </div>
+  <div class="hidden content">
+    <i class="level up alternate icon"></i>
+  </div>
+</div>
+{{/link-to}}
+{{/if}}
+
+
+{{/if}}

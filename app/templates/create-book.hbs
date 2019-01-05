@@ -1,0 +1,58 @@
+<h1 class="ui large header" style="margin-left: 3vw;">
+  Add a new book
+</h1>
+
+<div class="ui hidden divider"></div>
+<div class="ui hidden divider"></div>
+
+<div class="ui form" style="margin-left: 3vw">
+  <div class="inline field">
+    <label>Title</label>
+    {{input
+    value=form.title
+    name="title"
+    autocomplete='off'
+    id="form-title"}}
+  </div>
+</div>
+
+<br>
+<div class="ui hidden divider"></div>
+
+<div class="ui form" style="margin-left: 3vw">
+  <div class="inline field">
+    <label>Author</label>
+    {{input
+    value=form.author
+    name="author"
+    autocomplete='off'
+    id="form"
+    }}
+  </div>
+</div>
+
+<br>
+<div class="ui hidden divider"></div>
+
+<h2 class="ui header" style="margin-left: 3vw; font-size: 15px;">Description</h2>
+{{textarea value=form.description id="form-description" rows="5"}}
+
+<br>
+<div class="ui hidden divider"></div>
+
+<div id="title" class="ui animated fade circular button" style="font-size: 13px; margin-left: 2vw" {{action 'create'}}>
+  <div class="visible content">
+    Create
+  </div>
+  <div class="hidden content">
+    <i class="plus icon"></i>
+  </div>
+</div>
+<div id="title" class="ui animated fade circular button" style="font-size: 13px; margin-left: 2vw" {{action 'cancel'}}>
+  <div class="visible content">
+    Cancel
+  </div>
+  <div class="hidden content">
+    <i class="trash alternate icon"></i>
+  </div>
+</div>

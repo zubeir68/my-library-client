@@ -1,0 +1,1 @@
+{"modulePrefix":"client","environment":"development","rootURL":"/","locationType":"auto","EmberENV":{"FEATURES":{},"EXTEND_PROTOTYPES":{"Date":false}},"APP":{"name":"client","version":"0.0.0+fac52741"},"exportApplicationGlobal":true,"SEMANTIC_UI_VERSION":"2.2"}

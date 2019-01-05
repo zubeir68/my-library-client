@@ -1,0 +1,1 @@
+/home/zubeir/WORKSPACE/my_library/client/tmp/broccoli_persistent_filterbabel__babel_ember_inflector-output_path-7ks1UEea.tmp/ember-inflector/lib/system/inflections.js

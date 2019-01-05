@@ -1,0 +1,1 @@
+/home/zubeir/WORKSPACE/my_library/client/tmp/broccoli_persistent_filterbabel__babel_modules_for_templates-output_path-2byfz8YI.tmp/semantic-ui-ember/templates/components/ui-sidebar.js
