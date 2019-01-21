@@ -1,6 +1,0 @@
-[submodule "client"]
-	path = client
-	url = https://github.com/zubeir68/client.git
-[submodule "my-library-client"]
-	path = my-library-client
-	url = https://github.com/zubeir68/my-library-client.git
